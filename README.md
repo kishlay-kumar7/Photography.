@@ -1,5 +1,5 @@
 ![image](https://github.com/user-attachments/assets/414f57e3-238c-4959-868b-7c718074ada0)
--->THIS IS HOW THE PAFGE LOOKS <--
+-->THIS IS HOW THE PAGE LOOKS <--
 # Photography.
 Photography webpage using Html5 and CSS
 
