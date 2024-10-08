@@ -1,0 +1,121 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: "Fredoka", sans-serif;
+    color: rgb(174, 174, 174);
+}
+
+body{
+    background-image: url("camera.jpg");
+    background-size: cover;
+} 
+
+.btn_one{
+    font-size: 32px;
+    font-weight: 700px;
+    position: absolute;
+    left: 8px;
+    line-height: 40px;
+}
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 240px;
+    /* background-color: rgba(234, 230, 225, 0.234); */
+    box-shadow: 0 0 6px rgba(234, 230, 225, 0.234) ;
+    
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 50px;
+    box-shadow: 5px 5px 5px rgb(195, 38, 38);
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    top: 18px;
+    left:47px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.logo a::first-letter{
+    font-weight: 700px;
+    font-size: 35px;
+}
+.sidebar_menu .btn_two{
+    font-size: 20px;
+    line-height: 40px;
+    position: absolute;
+    left: 90%;
+    /* opacity: 0; */
+}
+
+
+.sidebar_menu .menu{
+    position: absolute;
+    top:70px;
+
+}
+.sidebar_menu .menu li{
+    margin-top: 10px;
+    padding: 4px 3px;
+    margin-left: 10px;
+}
+.sidebar_menu .menu li,i, a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar_menu .menu i,a{
+    padding: 5px;
+    font-size: 20px;
+    line-height: 22px;
+}
+.social_media {
+    position: absolute;
+    top: 640px;
+    padding: 20px;
+    font-size: 24px;
+    letter-spacing: 7px;
+}
+.sidebar_menu .menu li{
+    transition: border 1s ease;
+    border: 2px solid transparent;
+}
+.sidebar_menu .menu li:hover{
+    border: 2px solid rgb(228, 221, 221);
+    background-color: rgb(246, 224, 224);
+    /* color: white; */
+    transform: translateX(20px);
+    transition: transform 1s ease 0s;
+}
+.social_media a {
+    color: black;
+    transition: transform 0.5s ease-in-out 0s; /* Apply transition to a tag */
+}
+
+.social_media a i {
+    transition: transform 0.5s ease-in-out;
+}
+
+.social_media a:hover i {
+    transform: translateY(-4px); 
+    color: rgba(4, 4, 4, 0.573);
+}
+#check {
+    display: none; 
+} 
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+.btn_one i:hover, .btn_two i:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+.btn_two i:hover{
+    color: red;
+}
+#check:checked ~ .btn_one{
+    opacity: 0;
+}
